@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис - Новые Технологии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #d4fc79, #96e6a1);
+            background-size: cover;
+            color: #060606;
+            font-family: 'Arial', sans-serif;
+        }
+        .section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: slideInDown 1.2s ease;
+        }
+        .service-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.2s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        ul.list-group li {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            font-size: 16px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Новые Технологии</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="laptops.html">Ноутбуки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vr-glasses.html">VR Очки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Сервис</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="payment.html">Оплата</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Раздел "Сервис" -->
+    <div class="section">
+        <h2 class="section-title">Сервис</h2>
+        <div class="container">
+            <!-- Описание сервиса -->
+            <p class="text-center mb-4">
+                Наш сервис предоставляет высококачественную техническую поддержку для всех наших продуктов.
+                Мы стремимся обеспечить удобство и оперативность, чтобы каждый клиент получил лучшее обслуживание.
+            </p>
+
+            <!-- Услуги -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Диагностика и ремонт</h4>
+                        <p>Наши специалисты помогут определить и устранить любые неисправности в ваших устройствах.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Установка программного обеспечения</h4>
+                        <p>Мы устанавливаем и настраиваем программное обеспечение для оптимальной работы вашего оборудования.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>Обучение и консультации</h4>
+                        <p>Мы предоставляем обучение по использованию наших продуктов и консультации по любым вопросам.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дополнительная информация -->
+            <div class="mt-5">
+                <h4 class="text-center mb-3">Как обратиться в сервис?</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Позвоните нам: <strong>+7 (123) 456-78-90</strong></li>
+                    <li class="list-group-item">Напишите на email: <strong>service@example.com</strong></li>
+                    <li class="list-group-item">Посетите наш офис: <strong>Москва, ул. Технологий, д. 10</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

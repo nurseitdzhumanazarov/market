@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата - Новые Технологии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #d4fc79, #96e6a1);
+            background-size: cover;
+            background-position: center;
+            color: rgb(20, 20, 20);
+            font-family: 'Arial', sans-serif;
+        }
+        .section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: slideInDown 1.2s ease;
+        }
+        .payment-form {
+            max-width: 500px;
+            margin: 0 auto;
+            animation: fadeInUp 1.8s ease;
+        }
+        .payment-form button:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Новые Технологии</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="laptops.html">Ноутбуки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vr-glasses.html">VR Очки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Сервис</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="payment.html">Оплата</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Страница "Оплата" -->
+    <div id="payment" class="section">
+        <h2 class="section-title">Оплата</h2>
+        <div class="container">
+            <form class="payment-form">
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Номер карты</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Введите номер карты" required>
+                </div>
+                <div class="mb-3">
+                    <label for="expiryDate" class="form-label">Срок действия</label>
+                    <input type="month" class="form-control" id="expiryDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cardHolder" class="form-label">Владелец карты</label>
+                    <input type="text" class="form-control" id="cardHolder" placeholder="Имя владельца" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Оплатить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

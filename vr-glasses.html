@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Очки - Новые Технологии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #d4fc79, #96e6a1);
+            background-size: cover;
+            color: rgb(15, 14, 14);
+            font-family: 'Arial', sans-serif;
+        }
+        .section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: slideInDown 1.5s ease;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1.5s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Новые Технологии</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="laptops.html">Ноутбуки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vr-glasses.html">VR Очки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Сервис</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="payment.html">Оплата</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Страница "VR Очки" -->
+    <div id="vr-glasses" class="section">
+        <h2 class="section-title">Новые VR Очки</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://s0.rbk.ru/v6_top_pics/media/img/6/05/347031656400056.webp" class="card-img-top" alt="VR Очки">
+                        <div class="card-body">
+                            <h5 class="card-title">VR Очки 2024</h5>
+                            <p class="card-text">Новейшая модель VR очков с поддержкой 4K и встроенным аудио.</p>
+                            <p>1500$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://static.tildacdn.com/tild6436-3163-4265-b562-306535383235/Pimax-8kx-main.jpg" class="card-img-top" alt="VR Очки">
+                        <div class="card-body">
+                            <h5 class="card-title">VR Очки X-View</h5>
+                            <p class="card-text">Очки для полного погружения в виртуальную реальность, лёгкие и удобные.</p>
+                            <p>2000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://gstore.ua/content/uploads/images/news/visionprofishki/apple-vision-pro-preview-ben-lang.jpg" class="card-img-top" alt="VR Очки">
+                        <div class="card-body">
+                            <h5 class="card-title">Очки VR Pro</h5>
+                            <p class="card-text">Для профессионалов, ищущих наилучшее качество виртуальной реальности.</p>
+                            <p>2500$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
